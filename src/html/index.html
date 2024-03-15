@@ -4,24 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Your Movie</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="nav container">
-        <a href="/"><span>Yo.</span>Mo</a>
-        <div class="nav-menu">
+        <a href="/" class="nav-logo"><span>Yo.</span>Mo</a>
+        <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#movies">Movies</a></li>
-            <li><a href="#series">Series</a></li>
-            <li><a href="/src/html/about.html">About</a></li>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#movies" class="nav-link">Movies</a></li>
+            <li><a href="#series" class="nav-link">Series</a></li>
+            <li><a href="/src/html/about.html" class="nav-link">About</a></li>
           </ul>
-          <button class="search">buscarIco</button>
-          <!--si es true muestra input de busqueda-->
+          <div class="nav-close" id="nav-close">
+            <i class='bx bx-x'></i>
+          </div>
+        </div>
+        <!--si es true muestra input de busqueda-->
+        <div class="search-ico">
+          <i class='bx bx-search-alt-2'></i>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <i class='bx bx-menu'></i>
         </div>
       </nav>
     </header>
+    <main class="main"></main>
     <script src="/src/script/index.js"></script>
   </body>
 </html>

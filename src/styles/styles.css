@@ -1,1 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --header-height: 3.5rem;
+	/* Color Hue */
+  --hue: 20;
+  --primer-color: hsl(var(--hue), 100%, 40%);
+  --primer-color-alt: hsl(var(--hue), 56%, 35%);
+  --title-color: hsl(228, 8%, 95%);
+  --text-color: hsl(228, 8%, 65%);
+  --container-color: hsl(228, 15%, 25%);
+  --body-color: hsl(228, 15%, 0%);
+  /* fuente y tipografia */
+  --biggest-fs: 2rem;
+  --bigger-fs: 1.25rem;
+  --h1-fs: 1.5rem;
+  --h2-fs: 1.25rem;
+  --h3-fs: 1rem;
+  --normal-fs: 0.938rem;
+  --small-fs: 0.813rem;
+  --smaller-fs: 0.75rem;
+  /* font weight*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  /* z-index*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 1152px) {
+  :root {
+    --biggest-fs: 4rem;
+    --bigger-fs: 2rem;
+    --h1-fs: 2.25rem;
+    --h2-fs: 1.5rem;
+    --h3-fs: 1.25rem;
+    --normal-fs: 1rem;
+    --small-fs: 0.875rem;
+    --smaller-fs: 0.813rem;
+  }
+}
+input,
+button,
+body {
+  font-size: var(--normal-fs);
+}
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
